@@ -1,0 +1,2 @@
+tasks can be found on this website ( https://www.geeksforgeeks.org/dynamic-programming/ ).
+to see understand each tasks, please check out the website. 

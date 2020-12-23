@@ -1,8 +1,8 @@
 import random
 
-#This code was design to practice your basic knowledge
-#There are many operation for instance: multiplying, plus, minus, division, root , square and many more
-#First of all, you have to choose your difficulty 
+#This code was designed to practice your basic knowledge in math
+#There are many operations for instance multiplying, plus, minus, division, root , square and many more
+#First of all, you have to choose your difficulty of your practice
 #If you decide to move on another level u have press letter P
 #To show result of exercise you have to press V
 #To end whole program u have to press K

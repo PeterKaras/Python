@@ -1,5 +1,5 @@
 class Check:
-    #Checkuje ci sa tam nenachadza nieco neziaduce
+  
     def kontrola(self,znaky):
         for pismeno in znaky:
             if pismeno.upper() == "B" or pismeno.upper() == "C" or pismeno == "?":
@@ -19,7 +19,7 @@ class Check:
                 return "Prepracovat"
     
 class Line:
-    #Prechadza po riadku cisla a kontrolu
+
     def prechadzanie_line(self,zostatok=""):
         for i in range(self.dlzka):
             for j in range(self.sirka):
@@ -40,7 +40,7 @@ class Line:
         return "ok"
 
 class Low:
-    #Prechadza po stlpci a kontroluje
+  
     def prechadzanie_verticle(self,zostatok=""):
         for i in range(self.sirka):
             for j in range(self.dlzka):
@@ -61,7 +61,7 @@ class Low:
         return "Kalibracia prebehla uspesne"
             
 class Main(Check,Line,Low):
-    #Main cyklus 
+ 
     def __init__(self,rozmedzie):
         self.dlzka = int(rozmedzie[0])
         self.sirka = int(rozmedzie[1])

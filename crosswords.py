@@ -161,7 +161,7 @@ class Main(Loadings,Portraying):
                 self.main_indexes.append(dl_index.split(" "))
                 return "Ok"
                   
-    def __str__(self):
+    def __str__(self): 
         self.main_loop()
         return self.main_loop_port()
 

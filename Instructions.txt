@@ -1,0 +1,2 @@
+All these tasks have been written in python and the tasks are from FIIT STU coding competition. The language that is used to describe the coding tasks is slovak language. 
+You are able to find it in folder called tasks.

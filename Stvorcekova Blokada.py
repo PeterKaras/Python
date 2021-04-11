@@ -139,18 +139,3 @@ if cyklus.isdigit() and len(cyklus)>=1:
         cyklus = int(cyklus)-1
 else:
     print("Nezadali ste cislo!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

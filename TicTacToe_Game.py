@@ -5,7 +5,7 @@ class Main:
     def hlavny_cyklus(self,i=0,rounds = 0):
         while True:
             if i == 0:
-                player = input("(1) Zadajte vasu poziciu: ").strip()
+                player = input("Your position: ").strip()
                 if player.isdigit() and len(player)>=1:
                     znak = "X"
                     labelling = 1
@@ -13,7 +13,7 @@ class Main:
                 else:
                     continue
             else:
-                player = input("(2) Zadajte vasu poziciu: ").strip()
+                player = input("Your position: ").strip()
                 if player.isdigit() and len(player)>=1:
                     znak = "O"
                     labelling = 2
@@ -28,7 +28,7 @@ class Main:
             
             if rounds >= 4:
                 if self.checking(znak) == "win":
-                    return str(labelling)+" has won the Game! Enemy is FOOL!" 
+                    return str(labelling)+"won the Game!" 
   
             rounds += 1
             if rounds == 9:
@@ -41,7 +41,6 @@ class Main:
                 if self.field[i][0].count(znak) == 3:
                     return "win"
                 
-            #Dia z lava
             for j in range(3):
                 if str(self.field[j][j]) == znak:
                     first_dia += 1
@@ -49,7 +48,6 @@ class Main:
                         return "win"
             first_dia = 0
                         
-        #Kontrola stlca druheho
         if str(self.field[0][1]) == znak:
             for j in range(3):
                 if str(self.field[j][1]) == znak:
@@ -57,7 +55,6 @@ class Main:
                     if second_ver == 3:
                         return "win"
                     
-        #Kontrola stlca tretieho
         i = 2
         if str(self.field[0][2]) == znak:
             for j in range(3):
